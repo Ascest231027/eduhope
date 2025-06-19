@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +21,6 @@
       margin: 0;
       color: #c45d3f;
     }
-    header p {
-      margin: 0.5rem 0 0;
-      font-style: italic;
-      color: #8f4c3a;
-    }
     nav {
       background-color: #fff8f0;
       display: flex;
@@ -42,14 +38,7 @@
       padding: 2rem;
       text-align: center;
     }
-    .highlight {
-      background-color: #fff3e6;
-      padding: 1rem;
-      border-radius: 8px;
-      max-width: 800px;
-      margin: 0 auto 2rem;
-    }
-    .testimonials, .features-grid {
+    .teachers {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
@@ -63,30 +52,12 @@
       width: 250px;
       text-align: center;
     }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      max-width: 900px;
-      margin: 2rem auto;
-    }
-    .feature-box {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      text-align: left;
-    }
-    .feature-box h4 {
-      margin-top: 0;
-      color: #2c6a8f;
-    }
-    footer {
-      background-color: #fef6ef;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -94,68 +65,35 @@
 
   <header>
     <h1>EduHope</h1>
-    <p>Empowering Through Education</p>
   </header>
 
   <nav>
-    <a href="#home">Home</a>
+    <a href="index.html">Home</a>
     <a href="parent.html">Parent Portal</a>
     <a href="teachers.html">Meet Our Teachers</a>
-    <a href="#profile">Profile</a>
+    <a href="#">Profile</a>
   </nav>
 
-  <section id="home">
-    <div class="highlight">
-      <h2>Welcome to EduHope</h2>
-      <p>We believe education can break the cycle of poverty.<br>EduHope offers accessible online learning to children in need.</p>
-    </div>
-  </section>
-
-  <section id="about" style="line-height: 1.8;">
-    <h3>About Us</h3>
-    <p style="max-width: 700px; margin: 0 auto;">Education is the most powerful way to change destiny and get rid of poverty.
-      Our mission is to provide fair learning opportunities for poor children, help them get out of trouble through knowledge and reshape their future.
-      Through this platform, we are committed to connecting children in need with educational resources, volunteer tutoring, scholarship support and community help to break the learning barriers caused by poverty. We hope that every child can have hope, tools and direction to pursue their own dreams.
-      EduHope is not just a website, but also an action about educational equity and changing destiny. We believe that as long as everyone participates, every child deserves an unlimited future.
-      Let us work together to let education light up hope and let children see the future.
-    </p>
-  </section>
-
   <section>
-    <h3>We've Got You Covered</h3>
-    <div class="features-grid">
-      <div class="feature-box">
-        <h4>Proven Success</h4>
-        <p>We've helped countless students achieve measurable academic improvement and build the confidence to keep moving forward.</p>
+    <h2>Meet Our Teachers</h2>
+    <div class="teachers">
+      <div class="card">
+        <a href="aida.html"><img src="aida.png" alt="Ms. Aida"></a>
+        <h4>Ms. Aida</h4>
+        <p>English • 5 yrs experience</p>
       </div>
-      <div class="feature-box">
-        <h4>A Different Approach to Learning</h4>
-        <p>Our creative and flexible teaching methods make learning more engaging, effective, and suited to each child’s unique style.</p>
+      <div class="card">
+        <a href="kumar.html"><img src="kumar.png" alt="Mr. Kumar"></a>
+        <h4>Mr. Kumar</h4>
+        <p>Mathematics • 8 yrs experience</p>
       </div>
-      <div class="feature-box">
-        <h4>Customized Learning Plans</h4>
-        <p>Every student receives a tailored learning plan designed to match their level, pace, and personal goals for real, lasting growth.</p>
-      </div>
-      <div class="feature-box">
-        <h4>Entrance Exam Prep</h4>
-        <p>We offer focused preparation and guidance to help students perform their best in critical entrance and placement exams.</p>
+      <div class="card">
+        <a href="liyana.html"><img src="liyana.png" alt="Ms. Liyana"></a>
+        <h4>Ms. Liyana</h4>
+        <p>Science • 6 yrs experience</p>
       </div>
     </div>
   </section>
-
-  <section id="testimonials">
-    <h3>What Our Users Say</h3>
-    <div class="testimonials">
-      <div class="card">"EduHope helped my son catch up in math. He now enjoys school more than ever!"<br><small>– A Parent</small></div>
-      <div class="card">"I never thought I'd have a chance to study again. EduHope gave me that chance."<br><small>– A Student</small></div>
-      <div class="card">"Thanks to EduHope, I found a caring teacher who really understands me."<br><small>– Another Student</small></div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Contact us: info@eduhope.org | +6012-3456789</p>
-    <p>&copy; 2025 EduHope. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
