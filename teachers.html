@@ -8,26 +8,27 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
       background-color: #fffefb;
       color: #333;
+      margin: 0;
+      padding: 0;
     }
     nav {
-      background-color: #fff8f0;
+      background-color: #fcefe3;
       display: flex;
       justify-content: center;
-      padding: 1rem;
       gap: 2rem;
+      padding: 1rem 0;
+      font-weight: bold;
       border-bottom: 1px solid #eee;
     }
     nav a {
       text-decoration: none;
       color: #444;
-      font-weight: bold;
     }
     section {
-      padding: 2rem;
       text-align: center;
+      padding: 2rem;
     }
     .teachers {
       display: flex;
@@ -50,12 +51,12 @@
       object-fit: cover;
       margin-bottom: 1rem;
     }
-    .card a {
-      text-decoration: none;
-      color: #c45d3f;
-      font-weight: bold;
+    .profile-link {
       display: inline-block;
       margin-top: 0.5rem;
+      color: #e06030;
+      font-weight: bold;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -64,30 +65,30 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="parent.html">Parent Portal</a>
-    <a href="teachers_with_nav.html">Meet Our Teachers</a>
-    <a href="#profile">Profile</a>
+    <a href="teachers.html">Meet Our Teachers</a>
+    <a href="#">Profile</a>
   </nav>
 
   <section>
     <h2>Meet Our Teachers</h2>
     <div class="teachers">
       <div class="card">
-        <img src="ms_aida.png" alt="Ms. Aida">
+        <img src="aida.png" alt="Ms. Aida">
         <h4>Ms. Aida</h4>
         <p>English • 5 yrs experience</p>
-        <a href="ms_aida.html">View Profile</a>
+        <a class="profile-link" href="aida.html">View Profile</a>
       </div>
       <div class="card">
-        <img src="mr_kumar.png" alt="Mr. Kumar">
+        <img src="kumar.png" alt="Mr. Kumar">
         <h4>Mr. Kumar</h4>
         <p>Mathematics • 8 yrs experience</p>
-        <a href="mr_kumar.html">View Profile</a>
+        <a class="profile-link" href="kumar.html">View Profile</a>
       </div>
       <div class="card">
-        <img src="ms_liyana.png" alt="Ms. Liyana">
+        <img src="liyana.png" alt="Ms. Liyana">
         <h4>Ms. Liyana</h4>
         <p>Science • 6 yrs experience</p>
-        <a href="ms_liyana.html">View Profile</a>
+        <a class="profile-link" href="liyana.html">View Profile</a>
       </div>
     </div>
   </section>
