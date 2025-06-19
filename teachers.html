@@ -8,53 +8,53 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fffefb;
+      background-color: #fffdf9;
       color: #333;
       margin: 0;
-      padding: 0;
     }
     nav {
-      background-color: #fcefe3;
+      background-color: #fff1e8;
+      padding: 1rem;
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1rem 0;
-      font-weight: bold;
       border-bottom: 1px solid #eee;
     }
     nav a {
       text-decoration: none;
       color: #444;
+      font-weight: bold;
     }
-    section {
+    h2 {
       text-align: center;
-      padding: 2rem;
+      margin-top: 2rem;
     }
     .teachers {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
       flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
     }
     .card {
       background-color: #fff;
       border-radius: 12px;
       padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       width: 250px;
       text-align: center;
     }
     .card img {
       width: 80px;
       height: 80px;
-      border-radius: 50%;
       object-fit: cover;
+      border-radius: 50%;
       margin-bottom: 1rem;
     }
-    .profile-link {
+    .card a {
       display: inline-block;
       margin-top: 0.5rem;
-      color: #e06030;
+      color: #d94c00;
       font-weight: bold;
       text-decoration: none;
     }
@@ -69,29 +69,27 @@
     <a href="#">Profile</a>
   </nav>
 
-  <section>
-    <h2>Meet Our Teachers</h2>
-    <div class="teachers">
-      <div class="card">
-        <img src="aida.png" alt="Ms. Aida">
-        <h4>Ms. Aida</h4>
-        <p>English • 5 yrs experience</p>
-        <a class="profile-link" href="aida.html">View Profile</a>
-      </div>
-      <div class="card">
-        <img src="kumar.png" alt="Mr. Kumar">
-        <h4>Mr. Kumar</h4>
-        <p>Mathematics • 8 yrs experience</p>
-        <a class="profile-link" href="kumar.html">View Profile</a>
-      </div>
-      <div class="card">
-        <img src="liyana.png" alt="Ms. Liyana">
-        <h4>Ms. Liyana</h4>
-        <p>Science • 6 yrs experience</p>
-        <a class="profile-link" href="liyana.html">View Profile</a>
-      </div>
+  <h2>Meet Our Teachers</h2>
+  <div class="teachers">
+    <div class="card">
+      <img src="https://ascest231027.github.io/eduhope/aida.png" alt="Ms. Aida">
+      <h4>Ms. Aida</h4>
+      <p>English • 5 yrs experience</p>
+      <a href="aida.html">View Profile</a>
     </div>
-  </section>
+    <div class="card">
+      <img src="https://ascest231027.github.io/eduhope/kumar.png" alt="Mr. Kumar">
+      <h4>Mr. Kumar</h4>
+      <p>Mathematics • 8 yrs experience</p>
+      <a href="kumar.html">View Profile</a>
+    </div>
+    <div class="card">
+      <img src="https://ascest231027.github.io/eduhope/liyana.png" alt="Ms. Liyana">
+      <h4>Ms. Liyana</h4>
+      <p>Science • 6 yrs experience</p>
+      <a href="liyana.html">View Profile</a>
+    </div>
+  </div>
 
 </body>
 </html>
