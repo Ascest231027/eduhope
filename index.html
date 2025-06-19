@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,7 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #fffefb;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background-color: #ffeedd;
@@ -49,7 +51,20 @@
       max-width: 800px;
       margin: 0 auto 2rem;
     }
-    .testimonials, .features-grid {
+    .grid-2x2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .feature-box {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .testimonials {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
@@ -62,24 +77,6 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       width: 250px;
       text-align: center;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      max-width: 900px;
-      margin: 2rem auto;
-    }
-    .feature-box {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      text-align: left;
-    }
-    .feature-box h4 {
-      margin-top: 0;
-      color: #2c6a8f;
     }
     footer {
       background-color: #fef6ef;
@@ -98,9 +95,9 @@
   </header>
 
   <nav>
-    <a href="#home">Home</a>
+    <a href="index.html">Home</a>
     <a href="parent.html">Parent Portal</a>
-    <a href="teachers.html">Meet Our Teachers</a>
+    <a href="teachers.html">Choose a Teacher</a>
     <a href="profile.html">Profile</a>
   </nav>
 
@@ -111,35 +108,28 @@
     </div>
   </section>
 
-  <section id="about" style="line-height: 1.8;">
+  <section id="about">
     <h3>About Us</h3>
-    <p style="max-width: 700px; margin: 0 auto;">Education is the most powerful way to change destiny and get rid of poverty.
+    <p style="max-width: 700px; margin: 0 auto;">
+      Education is the most powerful way to change destiny and get rid of poverty.
+      <br><br>
       Our mission is to provide fair learning opportunities for poor children, help them get out of trouble through knowledge and reshape their future.
+      <br><br>
       Through this platform, we are committed to connecting children in need with educational resources, volunteer tutoring, scholarship support and community help to break the learning barriers caused by poverty. We hope that every child can have hope, tools and direction to pursue their own dreams.
+      <br><br>
       EduHope is not just a website, but also an action about educational equity and changing destiny. We believe that as long as everyone participates, every child deserves an unlimited future.
+      <br><br>
       Let us work together to let education light up hope and let children see the future.
     </p>
   </section>
 
   <section>
     <h3>We've Got You Covered</h3>
-    <div class="features-grid">
-      <div class="feature-box">
-        <h4>Proven Success</h4>
-        <p>We've helped countless students achieve measurable academic improvement and build the confidence to keep moving forward.</p>
-      </div>
-      <div class="feature-box">
-        <h4>A Different Approach to Learning</h4>
-        <p>Our creative and flexible teaching methods make learning more engaging, effective, and suited to each child’s unique style.</p>
-      </div>
-      <div class="feature-box">
-        <h4>Customized Learning Plans</h4>
-        <p>Every student receives a tailored learning plan designed to match their level, pace, and personal goals for real, lasting growth.</p>
-      </div>
-      <div class="feature-box">
-        <h4>Entrance Exam Prep</h4>
-        <p>We offer focused preparation and guidance to help students perform their best in critical entrance and placement exams.</p>
-      </div>
+    <div class="grid-2x2">
+      <div class="feature-box"><h4>Track Class Records</h4><p>Stay informed about your child's learning progress anytime.</p></div>
+      <div class="feature-box"><h4>Get Feedback</h4><p>Receive real-time updates and feedback from teachers.</p></div>
+      <div class="feature-box"><h4>Lesson Replays</h4><p>Rewatch classes at your convenience and never miss a thing.</p></div>
+      <div class="feature-box"><h4>Stay Connected</h4><p>Keep in touch with your child's educators easily.</p></div>
     </div>
   </section>
 
