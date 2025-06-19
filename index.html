@@ -17,12 +17,21 @@
       padding: 2rem;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      color: #c45d3f;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-style: italic;
+      color: #8f4c3a;
+    }
     nav {
       background-color: #fff8f0;
       display: flex;
       justify-content: center;
-      gap: 2rem;
       padding: 1rem;
+      gap: 2rem;
       border-bottom: 1px solid #eee;
     }
     nav a {
@@ -34,28 +43,26 @@
       padding: 2rem;
       text-align: center;
     }
-    .about {
+    .highlight {
+      background-color: #fff3e6;
+      padding: 1rem;
+      border-radius: 8px;
       max-width: 800px;
-      margin: 0 auto;
+      margin: 0 auto 2rem;
     }
-    .carousel {
+    .testimonials, .features {
       display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-      scroll-snap-type: x mandatory;
-      padding: 1rem;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
-    .carousel::-webkit-scrollbar {
-      display: none;
-    }
-    .carousel-item {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      flex: 0 0 auto;
-      width: 300px;
-      scroll-snap-align: start;
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
       padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      width: 250px;
+      text-align: center;
     }
     footer {
       background-color: #fef6ef;
@@ -75,14 +82,21 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="parent_portal.html">Parent Portal</a>
-    <a href="teachers.html">Meet Our Teachers</a>
-    <a href="profile.html">Profile</a>
+    <a href="parent.html">Parent Portal</a>
+    <a href="teachers_with_nav.html">Meet Our Teachers</a>
+    <a href="#">Profile</a>
   </nav>
 
-  <section class="about">
-    <h2>About Us</h2>
-    <p>
+  <section>
+    <div class="highlight">
+      <h2>Welcome to EduHope</h2>
+      <p>We believe education can break the cycle of poverty.<br>EduHope offers accessible online learning to children in need.</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>About Us</h3>
+    <p style="max-width: 700px; margin: 0 auto;">
       Education is the most powerful way to change destiny and get rid of poverty.<br><br>
       Our mission is to provide fair learning opportunities for poor children, help them get out of trouble through knowledge and reshape their future.<br><br>
       Through this platform, we are committed to connecting children in need with educational resources, volunteer tutoring, scholarship support and community help to break the learning barriers caused by poverty. We hope that every child can have hope, tools and direction to pursue their own dreams.<br><br>
@@ -92,11 +106,11 @@
   </section>
 
   <section>
-    <h2>What Our Users Say</h2>
-    <div class="carousel">
-      <div class="carousel-item">"EduHope helped my son catch up in math. He now enjoys school more than ever!"<br>– A Parent</div>
-      <div class="carousel-item">"I never thought I'd have a chance to study again. EduHope gave me that chance."<br>– A Student</div>
-      <div class="carousel-item">"Thanks to EduHope, I found a caring teacher who really understands me."<br>– Another Student</div>
+    <h3>What Our Users Say</h3>
+    <div class="testimonials">
+      <div class="card">"EduHope helped my son catch up in math. He now enjoys school more than ever!"<br><small>– A Parent</small></div>
+      <div class="card">"I never thought I'd have a chance to study again. EduHope gave me that chance."<br><small>– A Student</small></div>
+      <div class="card">"Thanks to EduHope, I found a caring teacher who really understands me."<br><small>– Another Student</small></div>
     </div>
   </section>
 
