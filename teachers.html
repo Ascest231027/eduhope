@@ -4,19 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meet Our Teachers</title>
+  <title>EduHope</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fffdf9;
-      color: #333;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffefb;
+      color: #333;
+    }
+    header {
+      background-color: #ffeedd;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #c45d3f;
     }
     nav {
-      background-color: #fff1e8;
-      padding: 1rem;
+      background-color: #fff8f0;
       display: flex;
       justify-content: center;
+      padding: 1rem;
       gap: 2rem;
       border-bottom: 1px solid #eee;
     }
@@ -25,42 +34,38 @@
       color: #444;
       font-weight: bold;
     }
-    h2 {
+    section {
+      padding: 2rem;
       text-align: center;
-      margin-top: 2rem;
     }
     .teachers {
       display: flex;
       justify-content: center;
+      gap: 1.5rem;
       flex-wrap: wrap;
-      gap: 2rem;
-      padding: 2rem;
     }
     .card {
       background-color: #fff;
       border-radius: 12px;
       padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       width: 250px;
       text-align: center;
     }
     .card img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 1rem;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #d94c00;
-      font-weight: bold;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>EduHope</h1>
+  </header>
 
   <nav>
     <a href="index.html">Home</a>
@@ -69,27 +74,26 @@
     <a href="#">Profile</a>
   </nav>
 
-  <h2>Meet Our Teachers</h2>
-  <div class="teachers">
-    <div class="card">
-      <img src="https://ascest231027.github.io/eduhope/aida.png" alt="Ms. Aida">
-      <h4>Ms. Aida</h4>
-      <p>English • 5 yrs experience</p>
-      <a href="aida.html">View Profile</a>
+  <section>
+    <h2>Meet Our Teachers</h2>
+    <div class="teachers">
+      <div class="card">
+        <a href="aida.html"><img src="aida.png" alt="Ms. Aida"></a>
+        <h4>Ms. Aida</h4>
+        <p>English • 5 yrs experience</p>
+      </div>
+      <div class="card">
+        <a href="kumar.html"><img src="kumar.png" alt="Mr. Kumar"></a>
+        <h4>Mr. Kumar</h4>
+        <p>Mathematics • 8 yrs experience</p>
+      </div>
+      <div class="card">
+        <a href="liyana.html"><img src="liyana.png" alt="Ms. Liyana"></a>
+        <h4>Ms. Liyana</h4>
+        <p>Science • 6 yrs experience</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://ascest231027.github.io/eduhope/kumar.png" alt="Mr. Kumar">
-      <h4>Mr. Kumar</h4>
-      <p>Mathematics • 8 yrs experience</p>
-      <a href="kumar.html">View Profile</a>
-    </div>
-    <div class="card">
-      <img src="https://ascest231027.github.io/eduhope/liyana.png" alt="Ms. Liyana">
-      <h4>Ms. Liyana</h4>
-      <p>Science • 6 yrs experience</p>
-      <a href="liyana.html">View Profile</a>
-    </div>
-  </div>
+  </section>
 
 </body>
 </html>
